@@ -1,0 +1,153 @@
+/* 
+*   Estilo Seções 
+*/ 
+header {  
+    display: block;  
+    margin-bottom: 1px; 
+    } 
+    nav { 
+    display: block;  
+    width: 20%;  
+    float: left; 
+    } 
+    section { 
+    display: block;  
+    width: 70%; 
+    float: right; 
+    } 
+    /* 
+     *   Estilo Geral 
+     */ 
+    body { 
+        color: #000000; 
+        font-size: 16px; 
+        background-color: #DDCC55; 
+        font-family: stoke, Lucida Bright, liberation; 
+    } 
+     
+    a:link    { color:#222222; text-decoration:none; } 
+    a:visited { color:#222222; text-decoration:none; } 
+     
+    ol   { line-height: 200%;                        } 
+    ul   { line-height: 200%;                        } 
+     
+    /* 
+     *   Estilo Nav 
+     */ 
+    nav ul { 
+        color: #000000; 
+        margin-top: 40px; 
+        line-height: 230%;   
+        list-style-type: square; 
+    } 
+     
+    /* 
+     *   Estilo Header 
+     */ 
+    .ender { 
+        float: right; 
+        text-align: right; 
+        font-size:  14px; 
+        line-height: 140%;  
+        font-family: karla, verdana, ubuntu; 
+    } 
+     
+    img.imgLogo { 
+        padding-bottom: 15px;  
+        border-bottom: solid 3px  #222222; 
+        margin-bottom: 6px; 
+    } 
+     
+    /*************************************** 
+     *   Estilo Seção Apresentação 
+     */ 
+    div.apres { 
+        text-align: center; 
+        font-size:  16px; 
+    }
+
+   /**************************************
+   *
+   *    Estilo Seção Planos
+   *
+   ***************************************
+   */
+
+    
+     div.titulo {
+        padding-left: 45px;
+    }
+
+   div.listaPlano {
+    width: 300px;
+    background-color: #EEEEBB;
+    font-size: 12px;
+    pad: var(10px 10px 10px 30px);
+    border: solid 3px #202020;
+    margin-top: 0%;
+   }
+   
+   ol {
+    color: #202020;
+    list-style: lower-alpha;
+    padding-bottom: 20px;
+    margin-bottom: auto;
+   }
+   ul {
+    list-style: square;
+    padding-left: auto;
+    padding-right: auto;
+   }
+   span.preco {
+    color: #CC0000;
+   }
+   
+   p.foot {
+        font-weight: bolder;
+        padding-left: 30px; 
+        font-size: smaller;
+   }
+
+   /* ************************************
+   *
+   *    Estilizando a Página de Equipamentos
+   *
+   ***************************************
+    */
+        
+    
+    table.tabEquip {
+        border: solid 1px black;
+        border-collapse: separate;
+        width: 510px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    th.titulo {
+        background-color: #402020;
+    }
+
+    th {
+        border: solid 1px;
+        padding: 10px;
+        font-size: 12px;
+        background-color: #EEEEBB;
+    }
+    
+    td {
+        border: solid 1px;
+        padding: 10px;
+        font-size: 12px;
+        background-color: #EEEEBB;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    img.imgCel {
+        width: 100px;
+        height: 100px;
+    }
