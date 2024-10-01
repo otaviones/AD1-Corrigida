@@ -158,3 +158,47 @@ header {
         width: 100px; 
         height: 100px; 
         }
+
+    div.Formulario {
+        border: solid 3px #202020;
+       width: 400px;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       margin: 0px auto 10px auto;
+       color: #202020;
+       background-color: #EEEEBB;
+       font-size: 12px;
+    }
+
+    .fsPessoal {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fsGenero {
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    h3.formTittle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fsCard {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .linhaNome {
+    
+    }
+        
+    .linhaDados {
+        height: 130px;
+        width: 34px;
+    }

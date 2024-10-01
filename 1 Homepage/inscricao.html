@@ -36,14 +36,79 @@
       </ul>
     </nav>
     <section>
-        <div class="formTitulo">
-            <h1>Inscrição</h1>
-        </div>
-        <div class="formulary">
-            <fieldset>Dados 
-                
+      <h3 class="formTittle">Inscrição</h3>
+      <div class="Formulario">
+        <form action="mailto:azeredo50@gmail.com" method="post">
+          <fieldset class="fsPessoal">
+            <legend>Dados Pessoais</legend>
+          <label class="linhaNome" for="nome">Nome:</label>
+          <input type="text" name="nome" size="20" id="nome" > <br>
+          <fieldset class="fsGenero">
+            <legend class="genreTitle">Genero</legend>
+            <input  name="Masculino" type="radio" value="masculino">
+            <label for="Masculino">Masculino</label> <br>
+            <input type="radio" name="Feminino">
+            <label for="Feminino">Feminino</label> <br>
+            <input type="radio" name="Outro">
+            <label for="Outro">Outro</label>
+          </fieldset>
+          <label for="telefone">Telefone:</label>
+          <input type="number"> 
+          <label for="celular">Celular:</label> <br>
+          <input type="number" name="celular" id="celular"> <br>
+          <label for="age">Idade:</label> <br>
+          <select name="age" id="age">
+            <option value="age">18</option>
+          </select>
+          </fieldset>
+
+          <fieldset class="fsmatricula">
+            <legend>Matrícula</legend>
+            <label for="matriculado?">Matriculado?</label>
+            <input type="checkbox" name="matriculado?" id="">
+            <label for="numMatricula">Número:</label>
+            <input type="number" name="numMatricula" id=""> <br>
+            <label for="atividade">Atividade:</label>
+            <select name="atividade" id="atividade">
+              <option value="nenhum">-----</option>
+              <option value="Academia">Academia</option>
+              <option value="Natação">Natação</option>
+              <option value="Combo">Combo</option>
+            </select>
+            <label for="Plano">Plano</label>
+            <select name="Plano" id="Plano">
+              <option value="nenhum">-----</option>
+              <option value="Anual">Anual</option>
+              <option value="Semestral">Semestral</option>
+              <option value="Mensal">Mensal</option>
+            </select>
+            <fieldset class="fsCard">
+              <legend>Cartão</legend>
+              <label for="bandeira">Bandeira:</label>
+              <input type="radio" name="Visa" id="">
+              <label for="Visa">Visa</label>
+              <input type="radio" name="Master" id="Master">
+              <label for="Master">Master</label>
+              <input type="radio" name="Elo" id="Elo">
+              <label for="Elo">Elo</label> <br>
+              <label for="Validade">Validade:</label>
+              <select name="Validade" id="Validade">
+                <option value="Validade">10</option> 
+              </select> <span>/</span>
+              <select name="Validade" id="Validade">
+                <option value="Validade">2024</option>
+              </select> <br>
+              <label for="cardNum">Número:</label>
+              <input type="number" name="cardNum" id="cardNum">
             </fieldset>
-        </div>
+            <button>Matrícula+Plano</button>
+            <label for="totalVal">Valor: R$</label>
+            <input type="number">
+          </fieldset>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </form>
+      </div>
     </section>
   </body>
 </html>
