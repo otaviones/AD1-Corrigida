@@ -159,8 +159,15 @@ header {
         height: 100px; 
         }
 
-    div.Formulario {
-        border: solid 3px #202020;
+
+    /*
+    *
+    *   Estilizando a Página de Inscrição
+    *  
+    */
+
+    .formul {
+       border: solid 3px #202020;
        width: 400px;
        padding-top: 20px;
        padding-bottom: 20px;
@@ -176,29 +183,90 @@ header {
         margin-right: auto;
     }
 
+    .linhaNome {
+        height: 30px;
+        width: 340px;
+        padding-top: 8px;
+    }
+
+    .linhaDados {
+        width: 340px;
+        height: 130px;
+    }
+
     .fsGenero {
         float: right;
         margin-top: 10px;
         margin-right: 10px;
     }
 
-    h3.formTittle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .fsCard {
+    .fsCartao {
         width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .linhaNome {
+    .inpNome {
+        width: 220px;
+    }
+
+    .ColDirMat {
+        float: right;
+    }
+
+    .ColEsqPes {
+        float: left;
+        width: 70px;
+        display: block;
+    }
+
+    .numDD {
+        width: 35px;
+    }
+
+    h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
+    .ColLabCrd {
+        width: 270px;
+        height: 30px;
+        text-align: left;
+        float: left;
     }
+
+    .ColValTot {
+        width: 220px;
+        text-align: left;
+        float: left;
+        display: block;
+    }
+
+    .entDireita {
+        margin-right: 20px;
+        float: right;
+    }
+
+    .numQD {
+        width: 50px;
+    }
+
+    .inpNCC {
+        width: 130px;
+    }
+
+    .inpTelef {
+        width: 90px;
+    }
+
+    .inpMat {
+        width: 70px;
+    }
+
+    .inpVal {
+    width: 50px;
+}
         
-    .linhaDados {
-        height: 130px;
-        width: 34px;
-    }
+   
