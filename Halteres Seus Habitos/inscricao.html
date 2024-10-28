@@ -9,10 +9,6 @@
       href="https://fonts.googleapis.com/css?family=Karla|Stoke"
       rel="stylesheet"
     />
-    <script lang="javascript">
-      function numeroDigitos(avisotext)
-      {alert(avisotext);}
-    </script>
   </head>
   <body>
     <header>
@@ -24,7 +20,7 @@
         >
       </address>
       <img class="imgLogo"
-        src="/1 Homepage/assets/HalteresSeusHabitosTopo.png"
+        src="assets/HalteresSeusHabitosTopo.png"
         alt="logo-topo"
       />
       <br />
@@ -41,7 +37,7 @@
     </nav>
     <section>
       <h3 class="Titulo">Inscrição</h3> 
-        <form onsubmit="return validatePhone()" method="POST"> 
+        <form method="POST"> 
         <div class="formul"> 
         <fieldset class="fsPessoal"> 
         <legend> Dados Pessoais&nbsp;</legend> 
@@ -64,38 +60,11 @@
         id="tel"  length="8"  name="TxtTelefone" />
 
         <!-- Coletando valores para o campo de insersão -->
-         <script lang="javascript">
-          function validatePhone(){
-            var telefone = document.getElementById("tel").value;
-            var celular = document.getElementById("cel").value;
-            var digitOnly = /^[0-8]+$/;
-
-            if (tel.length !==8 || !digitOnly.test(tel)){
-              alert("Telefone tem de ter 8 dígitos!");
-              return false;
-            }
-
-            if (cel.length !==9 || !digitOnly.test(tel)){
-              alert("Telefone tem de ter 8 dígitos!");
-              return false;
-            }
-
-            alert("Números válidos!");
-            return true;
-          }
-
-          function setupValidation(){
-            document.getElementById("tel").oninput = validatePhone;
-            document.getElementById("cel").oninput = validatePhone;
-          }
-
-          window.onload = setupValidation;
-         </script>
         
         <br/>      
         
         <br/><label for="cel"   class="ColEsqPes">Celular: </label> 
-        <input onsubmit="return validatePhone() " type="tel"  class="inpTelef" 
+        <input type="tel"  class="inpTelef" 
         id="cel"    name="TxtCelular" /><br/> 
         <br/><label for="idade"  class="ColEsqPes">Idade:</label> 
         <input type="number"  class="numDD" 

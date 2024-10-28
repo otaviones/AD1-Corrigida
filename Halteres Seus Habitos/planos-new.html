@@ -6,9 +6,9 @@
     <base target="_blank" />
     <link rel="stylesheet" type="text/css" href="HalteresSeusHabitos.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Karla|Stoke"
-      rel="stylesheet"
-    />
+    href="https://fonts.googleapis.com/css?family=Karla|Stoke"
+    rel="stylesheet"
+  />
   </head>
   <body>
     <header>
@@ -19,8 +19,9 @@
           contato@halterhabit.com.br</a
         >
       </address>
-      <img class="imgLogo"
-        src="/1 Homepage/assets/HalteresSeusHabitosTopo.png"
+      <img
+        class="imgLogo"
+        src="assets/HalteresSeusHabitosTopo.png"
         alt="logo-topo"
       />
       <br />
@@ -36,40 +37,32 @@
       </ul>
     </nav>
     <section>
-      <div  class="container">
+      <div class="container">
         <div class="titulo">
-             <h4>Planos (<span class="preco">valor mensal</span>)</h4>
+          <h4>Planos (<span class="preco">valor mensal</span>)</h4>
         </div>
         <div class="listaPlano">
           <ul>
             <li>
-              Academia
-              <ol>
-                <li>Anual (R$ <span class="preco"> 180,00</span>)</li>
-                <li>Semestral (R$ <span class="preco"> 220,00</span>)</li>
-                <li>Mensal (R$ <span class="preco"> 260,00</span>)</li>
-              </ol>
+              <a href="#" onclick="abrirDetalhesPlano('Musculação')"
+                >Musculação</a
+              >
             </li>
             <li>
-              Natação (3x semana):
-              <ol >
-                <li>Anual (R$ <span class="preco"> 300,00</span>)</li>
-                <li>Semestral (R$ <span class="preco"> 340,00</span>)</li>
-                <li>Mensal (R$ <span class="preco"> 380,00</span>)</li>
-              </ol>
+              <a href="#" onclick="abrirDetalhesPlanoNat('Natação')">Natação</a>
             </li>
             <li>
-              Combo (academia + natação):
-              <ol>
-                <li>Anual (R$ <span class="preco"> 330,00</span>)</li>
-                <li>Semestral (R$ <span class="preco"> 390,00</span>)</li>
-                <li>Mensal (R$ <span class="preco"> 440,00</span>)</li>
-              </ol>
+              <a href="#" onclick="abrirDetalhesPlanoComb('Combo')"
+                >Combo (Musculação + Natação)</a
+              >
             </li>
           </ul>
         </div>
-        <p class="foot">Matrícula Obrigatória: R$ <span class="preco"> 80,00</span></p>
+        <p class="foot">
+          Matrícula Obrigatória: R$ <span class="preco"> 80,00</span>
+        </p>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
