@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Karla|Stoke"
       rel="stylesheet"
     />
+    <script src="/Halteres Seus Habitos/formvalidate.js"></script>
   </head>
   <body>
     <header>
@@ -56,7 +57,7 @@
         <input type="radio" name="TglGenero" value="O"> Outro<br/> 
         </fieldset> 
         <br/><label for="tel"   class="ColEsqPes">Telefone: </label> 
-        <input type="tel" class="inpTelef" 
+        <input type="tel" class="inpTelef" onblur="validarTelefone('tel', 8)"
         id="tel"  length="8"  name="TxtTelefone" />
 
         <!-- Coletando valores para o campo de insersão -->
@@ -65,7 +66,7 @@
         
         <br/><label for="cel"   class="ColEsqPes">Celular: </label> 
         <input type="tel"  class="inpTelef" 
-        id="cel"    name="TxtCelular" /><br/> 
+        id="cel"  onblur="validarTelefone('cel', 9)"  name="TxtCelular" /><br/> 
         <br/><label for="idade"  class="ColEsqPes">Idade:</label> 
         <input type="number"  class="numDD" 
         id="idade"   name="TxtIdade" 
@@ -77,25 +78,25 @@
         <div class="linhaNome"> 
         <label for="mat">Matrículado? 
         <input type="checkbox" name="chkMatric" 
-        value="S" id="mat" /></label> 
+        value="S" id="chkMatric"></label> 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         <label for="mat" class="ColDirMat">Número:  
         <input type="text"  class="inpMat" 
-        id="mat" name="TxtMatricula"/></div>
+        id="mat" name="TxtMatricula"></div>
         <div class="linhaNome"> 
         <label for="ativ">Atividade: 
-        <select> 
-        <option> ----- </option> 
-        <option>Academia</option> 
-        <option>Natação</option> 
-        <option>Combo</option></select> </label> 
+        <select id="atividadeSelect"> 
+        <option value=""> ----- </option> 
+        <option value="academia">Academia</option> 
+        <option value="natacao">Natação</option> 
+        <option value="combo">Combo</option></select> </label> 
         &nbsp;&nbsp; 
         <label for="plano" class="ColDirMat">Plano:  
-        <select> 
+        <select id="planoSelect"> 
         <option> ----- </option> 
-        <option>Anual</option> 
-        <option>Semestral</option> 
-        <option>Mensal</option></select> </label> 
+        <option id="anual">Anual</option> 
+        <option id="semestral">Semestral</option> 
+        <option id="mensal">Mensal</option></select> </label> 
         </div> 
         <fieldset><legend> Cartão&nbsp;</legend> 
         <label class="colLabCrd" >Bandeira: 
@@ -113,7 +114,7 @@
         class="inpNCC" id="numCar"/></label><br/> 
         </fieldset> 
         <div class="linhaNome"> 
-        <input type="button" value="Matrícula+Plano">  
+        <input type="button" value="Matrícula+Plano" onclick="calcularValor()">
         <label for="TxtTotal" class="ColDirMat">Valor: R$ 
         <input type="text" name="TxtTotal" readonly 
         id="TxtTotal" class="inpVal" /></label> 
