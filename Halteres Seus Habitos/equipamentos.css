@@ -1,0 +1,75 @@
+        /* Classe para a tabela principal */
+        .tabEquip {
+            border-collapse: separate;
+            border: 1px solid #000;
+            width: 510px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        /* Cabeçalho da tabela */
+        .tabTitulo {
+            background-color: #402020;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        /* Subtítulo da descrição do equipamento */
+        .tabSubTit {
+            background-color: #802020;
+            color: #FFFFFF;
+            text-align: left;
+            padding: 10px;
+        }
+        
+        /* Células da tabela */
+        .tabEquip td, .tabEquip th {
+            border: 1px solid #000;
+            padding: 10px;
+            font-size: 12px;
+            background-color: #EEEEBB;
+        }
+        
+        /* Célula para imagem */
+        .imgCel {
+            width: 130px;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+        
+        .imgCel img {
+            width: 130px;
+            height: 130px;
+        }
+        
+        /* Célula de descrição */
+        #DescExe {
+            width: 250px;
+            height: 230px;
+            text-align: justify;
+            vertical-align: top;
+        }
+        
+        /* Estilo dos links */
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: #FFFFFF;
+        }
+        
+        a:hover {
+            color: #FFEE88;
+        }
+        
+        /* Célula de descrição do equipamento */
+        .DescExe {
+            width: 250px;
+            height: 230px;
+            text-align: justify;
+            vertical-align: top;
+        }
+        

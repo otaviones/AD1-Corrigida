@@ -21,7 +21,7 @@ function validarTelefone(id, qtdDigitos) {
 }
 
 function calcularValor() {
-    // Debugging: Confirmar se a função foi chamada
+   
     console.log("Função calcularValor foi chamada");
 
     const atividade = document.getElementById("atividadeSelect").value.toLowerCase();
@@ -35,23 +35,23 @@ function calcularValor() {
         combo: { mensal: 440, semestral: 440 * 6, anual: 440 * 12 }
     };
 
-    // Verifica se a atividade e o plano foram selecionados
+
     if (!atividade || !plano) {
         alert("Por favor, selecione uma atividade e um plano.");
-        return; // Encerra a função caso não estejam preenchidos
+        return; 
     }
 
-    // Debugging: Exibir valores selecionados no console
+ 
     console.log(`Atividade: ${atividade}, Plano: ${plano}, Matriculado: ${matriculado}, Número de Matrícula: ${numeroMatricula}`);
 
     let valor = valores[atividade][plano];
     
-    // Adiciona a taxa de matrícula se o aluno não estiver matriculado ou se o campo estiver vazio
+    
     if (!matriculado || !numeroMatricula) {
-        valor += 80; // Taxa de matrícula
+        valor += 80; 
     }
 
-    // Exibir o resultado no campo de saída
+
     document.getElementById("TxtTotal").value = `${valor.toFixed(2)}`;
 }
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Equipamentos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla|Stoke"
+      rel="stylesheet"
+    />
+    <style>
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <address class="ender">
+        Estrada do Puxa Ferro, 12<br />
+        Tel: (21) 91234-5678<br />
+        <a href="mailto:contato@halterhabit.com.br">
+          contato@halterhabit.com.br</a
+        >
+      </address>
+      <img
+        class="imgLogo"
+        src="assets/HalteresSeusHabitosTopo.png"
+        alt="logo-topo"
+      />
+      <br />
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#index2.html">Apresentação</a>
+        </li>
+        <li><a href="/1 Homepage/planos.html">Planos</a></li>
+        <li><a href="/1 Homepage/equipamentos.html">Equipamentos</a></li>
+        <li><a href="/1 Homepage/inscricao.html">Inscrição</a></li>
+      </ul>
+    </nav>
+    <section>
+      <table class="tabEquip">
+        <thead>
+          <tr>
+            <th colspan="3" class="tabTitulo">
+              Alguns dos Nossos Equipamentos
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#" onclick="mostrarEquipamento('Cadeira Extensora')"
+                >Cadeira Extensora</a
+              >
+            </td>
+            <td class="ImgDes" rowspan="3" id="ImgDes">
+              <img src="assets/Vazio_360.png" alt="Vazio" />
+            </td>
+            <td class="DescExe" rowspan="3" id="DescExe">
+              Selecione um equipamento para ver detalhes
+            </td>
+          </tr>
+          <tr>
+            <td class="tabSelect">
+              <a href="#" onclick="mostrarEquipamento('Supino Vertical')"
+                >Supino Vertical</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#" onclick="mostrarEquipamento('Remada Baixa')"
+                >Remada Baixa</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script src="/Halteres Seus Habitos/equipamentos.js"></script>
+  </body>
+</html>

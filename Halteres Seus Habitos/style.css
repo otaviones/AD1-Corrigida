@@ -299,5 +299,54 @@ header {
 /*
 */
 
+.tabEquip {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #4b2c18;
+  }
 
+  .tabTitulo {
+    background-color: #4b2c18;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Stoke', serif;
+  }
+
+  .tabEquip td:first-child{
+    background-color: #802020;
+    color: #fff;
+    width: 20%;
+    text-align: center;
+    padding: 15px;
+  }
+  .tabEquip td:first-child a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .tabEquip td:first-child a:hover {
+    color:  #FFEE88;
+  }
+
+  .ImgDes {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    vertical-align: top;
+  }
+  .ImgDes img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .DescExe {
+    background-color: #FFEE88;
+    width: 50%;
+    padding: 15px;
+    font-size: 1em;
+    text-align: left;
+  }
 
